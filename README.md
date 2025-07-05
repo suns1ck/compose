@@ -1,2 +1,2 @@
 # compose
-A repo of my Docker compose files! Pretty simple.
+A repo for my Docker compose files and container deployment scripts!
