@@ -1,0 +1,17 @@
+services:
+  mealie:
+    image: ghcr.io/mealie-recipes/mealie:v3.0.2 # 
+    container_name: mealie
+    restart: always
+    ports:
+        - "9925:9000" # 
+    deploy:
+      resources:
+        limits:
+          memory: 2000M # 
+    volumes:
+      - /containers/mealie/mealie-data:/app/data/
+    env_file:
+      - /env/.mealie_env
+volumes:
+  mealie-data:
