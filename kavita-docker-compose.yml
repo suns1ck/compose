@@ -2,10 +2,8 @@ services:
   kavita:
     image: lscr.io/linuxserver/kavita:latest
     container_name: kavita
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=NZST
+    env_file:
+      - /env/.kavita-env
     volumes:
       - /containers/kavita/config:/config
       - /containers/kavita/data:/data #optional

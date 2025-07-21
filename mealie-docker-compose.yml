@@ -12,6 +12,6 @@ services:
     volumes:
       - /containers/mealie/mealie-data:/app/data/
     env_file:
-      - /env/.mealie_env
+      - /env/.mealie-env
 volumes:
   mealie-data:
