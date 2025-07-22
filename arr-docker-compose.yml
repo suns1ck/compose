@@ -32,8 +32,8 @@ services:
       - TZ=NZST
     volumes:
       - /containers/radarr/config:/config
-      - /mnt/media/movies:/movies #optional
-      # - /path/to/download-client-downloads:/downloads #optional
+      - /mnt/media/movies:/movies
+      # - /path/to/download-client-downloads:/downloads
     ports:
       - 7878:7878
     restart: unless-stopped
@@ -46,8 +46,8 @@ services:
       - TZ=NZST
     volumes:
       - /containers/sonarr/config:/config
-      - /mnt/media/shows:/shows #optional
-      # - /path/to/downloadclient-downloads:/downloads #optional
+      - /mnt/media/shows:/shows
+      # - /path/to/downloadclient-downloads:/downloads
     ports:
       - 8989:8989
     restart: unless-stopped
