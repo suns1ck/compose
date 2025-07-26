@@ -5,7 +5,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=NZST
+      - TZ=Pacific/Auckland
     volumes:
       - /containers/overseerr/config:/config
     ports:
@@ -17,7 +17,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=NZST
+      - TZ=Pacific/Auckland
     volumes:
       - /containers/prowlarr/config:/config
     ports:
@@ -29,7 +29,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=NZST
+      - TZ=Pacific/Auckland
     volumes:
       - /containers/radarr/config:/config
       - /mnt/media/movies:/movies
@@ -43,7 +43,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=NZST
+      - TZ=Pacific/Auckland
     volumes:
       - /containers/sonarr/config:/config
       - /mnt/media/shows:/shows
